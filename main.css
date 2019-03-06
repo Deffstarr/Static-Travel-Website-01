@@ -1,0 +1,142 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(img/wpw-joshua-sortino.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn-outline {
+    border: 2px solid #eee;
+    padding: 1rem;
+    text-align: center;
+    transition: 1s ease-in-out;
+}
+.btn-outline:hover {
+    color: #111;
+    background-color: #eee;
+    border: 2px solid #eee;
+    padding: 1rem;
+}
+
+.btn-cta {
+    background-color: #eee;
+    color: #111;
+    font-size: 2.1em;
+    font-weight: 600;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 130%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease-in-out;
+}
+.btn-cta:hover {
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    transform: translate(-50%, -65%);
+}
+
+/* Navigation */
+header {
+    border-bottom: 2px solid #ddd;
+    height: 20px;
+    padding: 3em 2em;
+}
+.logo {
+    color: #eee;
+    font-size: 3em;
+    font-weight: 600;
+    padding-left: .5em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav {
+    float: right;
+    padding-right: 5em;
+}
+nav ul {
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    border-bottom: 0 solid #eee;
+    color: #eee;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 2rem;
+    padding: 1.2rem;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+nav ul li a:hover {
+    border-bottom: 0.3rem solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+/* Main Content */
+main {
+    width: 1110px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1 {
+    animation: mainLeft 1s ease-in-out;
+    color: #eee;
+    font-size: 5rem;
+    letter-spacing: .5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+p {
+    animation: mainRight 1s ease-in-out;
+    color: #ddd;
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Animation */
+/* Main-Head */
+@keyframes mainLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+/* Main-Sub */
+@keyframes mainRight {
+    0% {
+        opacity: 0;
+        transform: translateX(3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
